@@ -1,0 +1,208 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29de96963c6c4db4ac881608aa958685, type: 3}
+  m_Name: Battle Balance
+  m_EditorClassIdentifier:
+  winHeal: 22
+  knockoutHealthFraction: 0.5
+  step: 0.033333335
+  bodyRadius: 0.34
+  attackWindup: 0.16
+  initialCooldownFraction: 0.45
+  arenaHalfWidth: 3.65
+  arenaHalfHeight: 4.75
+  columnSpacing: 2.22
+  frontY: 1.36
+  rowSpacing: 1.3
+  kaiju:
+    health: 200
+    attack: 15
+    attackInterval: 0.72
+    range: 1.02
+    speed: 2.18
+    firstCooldown: 4.1
+    secondCooldown: 6.4
+  support:
+    health: 96
+    attack: 4.2
+    attackInterval: 1.26
+    range: 3.85
+    speed: 1.92
+    firstCooldown: 6.1
+    secondCooldown: 7.6
+  slime:
+    health: 51
+    attack: 4.6
+    attackInterval: 1.25
+    range: 0.95
+    speed: 1.55
+    firstCooldown: 4.6
+    secondCooldown: 0
+  guard:
+    health: 70
+    attack: 5.3
+    attackInterval: 1.36
+    range: 0.98
+    speed: 1.47
+    firstCooldown: 4.7
+    secondCooldown: 0
+  goblinHealer:
+    health: 48
+    attack: 2.4
+    attackInterval: 1.65
+    range: 3.45
+    speed: 1.36
+    firstCooldown: 5.3
+    secondCooldown: 0
+  spider:
+    health: 103
+    attack: 7.1
+    attackInterval: 1.26
+    range: 1
+    speed: 1.81
+    firstCooldown: 4
+    secondCooldown: 0
+  archer:
+    health: 47
+    attack: 4.3
+    attackInterval: 1.4
+    range: 4.2
+    speed: 1.31
+    firstCooldown: 6.4
+    secondCooldown: 0
+  armor:
+    health: 178
+    attack: 13.1
+    attackInterval: 1.3
+    range: 1.04
+    speed: 1.36
+    firstCooldown: 5.5
+    secondCooldown: 0
+  healer:
+    health: 85
+    attack: 7
+    attackInterval: 1.47
+    range: 4.02
+    speed: 1.35
+    firstCooldown: 5.2
+    secondCooldown: 0
+  illusionist:
+    health: 90
+    attack: 9
+    attackInterval: 1.46
+    range: 3.72
+    speed: 1.46
+    firstCooldown: 5.5
+    secondCooldown: 0
+  blinkMage:
+    health: 158
+    attack: 11.4
+    attackInterval: 1.32
+    range: 3.35
+    speed: 1.52
+    firstCooldown: 3.45
+    secondCooldown: 0
+  wizard:
+    health: 217
+    attack: 11.4
+    attackInterval: 1.48
+    range: 4.12
+    speed: 1.21
+    firstCooldown: 2.35
+    secondCooldown: 0
+  knight:
+    health: 108
+    attack: 4.75
+    attackInterval: 1.53
+    range: 1.03
+    speed: 1.53
+    firstCooldown: 5.1
+    secondCooldown: 0
+  shadowMage:
+    health: 53
+    attack: 4.6
+    attackInterval: 1.72
+    range: 3.75
+    speed: 1.27
+    firstCooldown: 4.4
+    secondCooldown: 0
+  stompDamage: 23
+  stompRadius: 1.53
+  breathDamage: 19
+  breathRange: 2.45
+  breathConeAngle: 46
+  burnDamage: 4
+  burnTicks: 3
+  burnInterval: 0.6
+  missingHealthDamage: 0.36
+  widerStomp: 1.02
+  longerBurnTicks: 5
+  longerBurnInterval: 0.4
+  stompShield: 12
+  stompShieldDuration: 3.2
+  harderStomp: 1.6
+  fasterClaw: 0.78
+  burnHeal: 4.6
+  aftershockDelay: 0.48
+  aftershockDamage: 15
+  aftershockRadius: 1.53
+  hideThreshold: 0.5
+  hideReduction: 0.32
+  clawFollowUp: 11
+  beamRadius: 1.38
+  beamDuration: 2.8
+  beamInterval: 0.55
+  beamHeal: 4.8
+  beamDamage: 3.8
+  beamCooldownRate: 1.2
+  teamShield: 16
+  teamShieldDuration: 3.35
+  sharedLightHeal: 8
+  chainHeal: 18
+  chainStunRadius: 1.9
+  chainStunTime: 1.05
+  doubleHealing: 2
+  shieldHeal: 13
+  doubleBeamDamage: 2
+  shieldPulseRadius: 1.75
+  shieldPulseDamage: 17
+  beamSlow: 0.42
+  weakenMultiplier: 0.68
+  weakenDuration: 2.8
+  widerBeam: 0.85
+  envelopDamage: 8
+  envelopHeal: 5
+  guardDuration: 1.18
+  guardReduction: 0.48
+  guardThrust: 8
+  goblinHeal: 14
+  mageHeal: 15
+  healRange: 6.15
+  spiderRoll: 14
+  spiderRollRange: 1.32
+  enrageThreshold: 0.5
+  enrageMultiplier: 1.6
+  burstShots: 5
+  burstSpeed: 2
+  armorGuardDuration: 1.05
+  cloneFraction: 0.46
+  blinkDamage: 39
+  wizardMana: 90
+  summonCost: 30
+  manaRechargeTime: 10
+  knightCap: 3
+  shadowMageCap: 3
+  shieldBash: 7
+  knockback: 0.78
+  shadowBurst: 21
+  shadowBurstRange: 3.6
+  shadowBurstRadius: 1.45
